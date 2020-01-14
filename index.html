@@ -3,8 +3,8 @@
 	<head>
 		<title>Ritik Verma</title>
 
-		<!-- add icon link -->
-        <link rel = "icon" href = "profilePhoto.jpeg" type = "image/x-icon">
+		<!-- Adding Image in Title Bar -->
+        <link rel = "icon" href = "Images/profilePhoto.jpeg" type = "image/x-icon">
 
 		<!-- Stylesheet link for bootstrap -->
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -12,298 +12,381 @@
     	<!-- FontAwesome Kit -->
     	<script src="https://kit.fontawesome.com/c3bf57b584.js" crossorigin="anonymous"></script>
 
+    	<!-- Internal StyleSheet for elements -->
     	<link rel="stylesheet" type="text/css" href="css.css">
-
-    	<style>
-    		i{
-    		width : 100px;
-    		height : 100px;
-    	}
-    </style>
   	</head>
   	
   	<body>
-  		<ul class="nav nav-tabs" id="myTab" role="tablist">
-  			<li class="nav-item">
-  				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-  			</li>
-  			<li class="nav-item">
-    			<a class="nav-link" id="my-resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">My Resume</a>
-  			</li>
-  			<li class="nav-item">
-    			<a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">Projects</a>
-  			</li>
-  			<li class="nav-item">
-    			<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Details</a>
-  			</li>
-		</ul>
+
+  		<!-- Navigation Bar -->
+  		<div>
+	  		<ul class="nav nav-tabs" id="myTab" role="tablist">
+	  			<li class="nav-item">
+	  				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+	  			</li>
+	  			<li class="nav-item">
+	    			<a class="nav-link" id="my-resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">My Resume</a>
+	  			</li>
+	  			<li class="nav-item">
+	    			<a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">Projects</a>
+	  			</li>
+	  			<li class="nav-item">
+	    			<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Details</a>
+	  			</li>
+			</ul>
+		</div>
 
 		<div class="tab-content" id="myTabContent">
 
 			<!-- About Us Page -->
   			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-  				<center>
-  					<dl>
-  						<dt>Ritik Verma</dt>
-  						<dd>Full Stack Web Developer</dd>
-  					</dl>
-  				</center>
-  				<hr>
 
-  				<div class = "row">
-  					<div class = "col-2">
-  						<img src="profilePhoto.jpeg" width="100" height="100">
+  				<div class = "container">
+
+  					<!-- Header Details and Job Title -->
+	  				<center class = "row-margin-top">
+	  					<dl>
+	  						<dt>Ritik Verma</dt>
+	  						<dd>Full Stack Web Developer</dd>
+	  					</dl>
+	  				</center>
+
+	  				<hr>
+
+	  				<div class = "row">
+	  					<div class = "col-lg-4 col-sm-12">
+	  						<img src="Images/profilePhoto.jpeg" width="100%" height="100%">
+	  					</div>
+	  					<div class = "col-lg-8 col-sm-12">
+	  						<h3 align="center">About Me</h3>
+	  						<p>
+	  							I am a coding enthusiast with strong knowledge of C, Java, Data Structures and Algorithms, skilled in SQL and Database Management Systems(DBMS) along with some basic coding skills in C++, also having my hands on practice in Web Development in both front-end and back-end. Along, with these devlopmental skills i am learning Machine Learning as AI is future of our generation. I am seeking an opportunity to implement my programming and development skills in a practical application which will give me exposure to the actual design and execution process of industry. I would love to associate with such an organization where I can utilize my skills and gain further experience while enhancing the company's productivity and reputation.
+	  							<br>
+	  							<br>
+	  							Apart from these, I strongly believe in Management and Leadership skills and I possess an effective communication skill set that would enhance my client's interaction.
+	  						</p>
+	  					</div>
   					</div>
-  					<div class = "col-10">
-  						<h3>About Me</h3>
-  						<p>
-  							I am a coding enthusiast with strong knowledge of C, Java, Data Structures and Algorithms, skilled in SQL and Database Management Systems(DBMS) along with some basic coding skills in C++, also having my hands on practice in Web Development in both front-end and back-end. Along, with these devlopmental skills i am learning Machine Learning as AI is future of our generation. I am seeking an opportunity to implement my programming and development skills in a practical application which will give me exposure to the actual design and execution process of industry. I would love to associate with such an organization where I can utilize my skills and gain further experience while enhancing the company's productivity and reputation.
-  							<br>
-  							Apart from these, I strongly believe in Management and Leadership skills and I possess an effective communication skill set that would enhance my client's interaction.
-  						</p>
-  					</div>
+
+  					<hr>
+
   				</div>
-
   			</div>
 
   			<!-- Resume Page -->
   			<div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="my-resume-tab">
 
-  				<!-- Resume Button Download -->
-  				<div id = "resumeDownload" style="margin-top: 20px">
-  					<center>
-  						<h4>Resume Download</h4>
-  						<p>Click on the button below to download the resume</p>
-  						<a href="resume.pdf" download="Ritik Verma Resume" class="btn btn-primary btn-lg btn-block">
-  							Download
-  						</a>
-  					</center>
-  				</div>
-
-  				<hr>
-
-  				<!-- Resume Block -->
-  				<div style="border: 1px solid black; padding: 10px; margin:0px 100px">
-
-  					<!-- Basic Info -->
-  					<div id = "basicInfo">
+  				<div class = "container">
+  					<!-- Resume Button Download -->
+	  				<div id = "resumeDownload" class = "row-margin-top">
 	  					<center>
-		  					<dl>
-	  							<dd><h3>Ritik Verma</h3></dd>
-	  							<dt>Computer Science Engineer</dt>
-	  						</dl>
+	  						<h4>Resume Download</h4>
+	  						<p>Click on the button below to download the resume</p>
+	  						<a href="resume.pdf" download="Ritik Verma Resume" class="btn btn-primary btn-lg btn-block">
+	  							Download
+	  						</a>
 	  					</center>
-  						<hr>
-						<p><b>Email :</b> ritikverma8100775754@gmail.com</p>
-						<p><b>Mobile No. :</b> 8961713483</p>
-  					</div>
-  
-					<hr>
+	  				</div>
 
-					<!-- Acedemic Qualification -->
-					<div id = "acedemicQualification">
-						<h4><u>Academic Qualification</u></h4>
-						<table class="table">
-							<thead class = "thead-dark">
+	  				<hr>
+
+	  				<!-- Resume Block -->
+	  				<div style="border: 1px solid black; padding: 10px; margin:0px 100px">
+
+	  					<!-- Basic Info -->
+	  					<div id = "basicInfo">
+		  					<center>
+			  					<dl>
+		  							<dd><h3>Ritik Verma</h3></dd>
+		  							<dt>Computer Science Engineer</dt>
+		  						</dl>
+		  					</center>
+	  						<hr>
+							<p><b>Email :</b> ritikverma8100775754@gmail.com</p>
+							<p><b>Mobile No. :</b> 8961713483</p>
+	  					</div>
+	  
+						<hr>
+
+						<!-- Acedemic Qualification -->
+						<div id = "acedemicQualification">
+							<h4><u>Academic Qualification</u></h4>
+							<table class="table">
+								<thead class = "thead-dark">
+									<tr>
+										<th scope="col">Year</th>
+										<th scope="col">Examination</th>
+										<th scope="col">Institute/School</th>
+										<th scope="col">Board</th>
+										<th scope="col">Percentage/CGPA</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<!-- Acedemic Qualification of college -->
+									<tr>
+										<td>2021</td>
+										<td>B. Tech CSE</td>
+										<td>Amity University, Kolkata</td>
+										<td>Autonomous</td>
+										<td>9.18 CGPA</td>
+									</tr>
+
+									<!-- Acedemic Qualification of class 12 -->
+									<tr>
+										<td>2017</td>
+										<td>XII</td>
+										<td>Calcutta Public School</td>
+										<td>CISCE (ISC)</td>
+										<td>94.50%</td>
+									</tr>
+
+									<!-- Acedemic Qualification of class 10 -->
+									<tr>
+										<td>2015</td>
+										<td>X</td>
+										<td>Calcutta Public School</td>
+										<td>CISCE (ICSE)</td>
+										<td>83.6%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<hr>
+
+						<!-- Honour and Award segment -->
+						<div id = "honourAndAward">
+							<h4><u>Honour And Award</u></h4>
+							<ul>
+								<li>
+									<b>Scholarship (2017) :</b> Received 50% annual scholarship for being in the top 5 students in the department.
+								</li>
+								<li>
+									Secured 1st rank in <b>coding event (Codeplay)</b> organised by <b>St.Xavier's College, Kolkata</b> annual tech-fest eXabyte 2019.
+								</li>
+								<li>
+									<b>Medha Samman : </b>Award of excellence for outstanding performance in class 12 by Taaza TV.
+								</li>
+							</ul>
+						</div>
+
+						<hr>
+
+						<!-- Key Project segment -->
+						<div id = "keyProject">
+							<h4><u>Key Projects</u></h4>
+							<ul>
+								<li>
+									<b>A Catalogue Display Website :</b> The admin in this site had access to database and was able to upload all necessary data and images of product on website for user's to see.
+								</li>
+								<li>
+									<b>SLAM BOOK :</b> User's in this site were allowed to see response of their friends on pre-defined questions in website.
+								</li>
+							</ul>
+						</div>
+
+						<hr>
+
+						<!-- Technical Knowledge -->
+						<div id = "technicalKnowledge">
+							<h4><u>Technical Knowledge</u></h4>
+							
+							<div class = "row">
+								<div class = "col-lg-4 col-md-6 col-sm-12">
+									<div class = "border border-dark rounded bg-light">
+										<h5><center>Programming Languages :-</center></h5>
+										<ul>
+											<li>C</li>
+											<li>C++</li>
+											<li>Java</li>
+											<li>Python</li>
+											<li>Javascript</li>
+											<li>HTML</li>
+											<li>CSS</li>
+											<li>R</li>
+										</ul>
+									</div>
+								</div>
+								<div class = "col-lg-4 col-md-6 col-sm-12">
+									<div class = "border border-dark rounded bg-light">
+										<h5><center>Frameworks :-</center></h5>
+										<ul>
+											<li>Bootstrap</li>
+										</ul>
+									</div>
+								</div>
+								<div class = "col-lg-4 col-md-6 col-sm-12">
+									<div class = "border border-dark rounded bg-light">
+										<h5><center>Databases :-</center></h5>
+										<ul>
+											<li>MySql</li>
+											<li>Oracle</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class = "row">
+								<div class = "col-lg-4 col-md-6 col-sm-12">
+									<div class = "border border-dark rounded bg-light">
+										<h5><center>Tools :-</center></h5>
+										<ul>
+											<li>MS Word</li>
+											<li>MS Excel</li>
+											<li>MS Power Point</li>
+											<li>Sublime Text Editor</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class = "col-lg-4 col-md-6 col-sm-12">
+									<div class = "border border-dark rounded bg-light">
+										<h5><center>Operating System :-</center></h5>
+										<ul>
+											<li>Windows</li>
+											<li>Linux</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<hr>
+
+						<!-- Other Information -->
+						<div id = "otherInfo">
+
+							<h4><u>Other Information</u></h4>
+							<table class="table table-striped">
 								<tr>
-									<th scope="col">Year</th>
-									<th scope="col">Examination</th>
-									<th scope="col">Institute/School</th>
-									<th scope="col">Board</th>
-									<th scope="col">Percentage/CGPA</th>
+									<th scope = "row">Linked In Profile</th>
+									<td><a href="https://www.linkedin.com/in/ritik-v-100516a5/">Click Here</a></td>
 								</tr>
-							</thead>
 
-							<tbody>
-								<!-- Acedemic Qualification of college -->
 								<tr>
-									<td>2021</td>
-									<td>B. Tech CSE</td>
-									<td>Amity University, Kolkata</td>
-									<td>Autonomous</td>
-									<td>9.18 CGPA</td>
+									<th scope = "row">Git Hub Profile</th>
+									<td><a href="https://github.com/Ritik1908">Click Here</a></td>
 								</tr>
 
-								<!-- Acedemic Qualification of class 12 -->
 								<tr>
-									<td>2017</td>
-									<td>XII</td>
-									<td>Calcutta Public School</td>
-									<td>CISCE (ISC)</td>
-									<td>94.50%</td>
+									<th scope = "row">Portfolio Link</th>
+									<td><a href="https://ritik1908.github.io/">Click Here</a></td>
 								</tr>
 
-								<!-- Acedemic Qualification of class 10 -->
 								<tr>
-									<td>2015</td>
-									<td>X</td>
-									<td>Calcutta Public School</td>
-									<td>CISCE (ICSE)</td>
-									<td>83.6%</td>
+									<th scope = "row">Skills</th>
+									<td>Smart Worker, Time Management, Problem Solving.</td>
 								</tr>
-							</tbody>
-						</table>
-					</div>
 
-					<hr>
+								<tr>
+									<th scope = "row">Hobbies</th>
+									<td>Guitar, Chess, Cricket.</td>
+								</tr>
 
-					<!-- Honour and Award segment -->
-					<div id = "honourAndAward">
-						<h4><u>Honour And Award</u></h4>
-						<ul>
-							<li>
-								<b>Scholarship (2017) :</b> Received 50% annual scholarship for being in the top 5 students in the department.
-							</li>
-							<li>
-								Secured 1st rank in <b>coding event (Codeplay)</b> organised by <b>St.Xavier's College, Kolkata</b> annual tech-fest eXabyte 2019.
-							</li>
-							<li>
-								<b>Medha Samman : </b>Award of excellence for outstanding performance in class 12 by Taaza TV.
-							</li>
-						</ul>
-					</div>
+								<tr>
+									<th scope = "row">Languages</th>
+									<td>English, Hindi, French.</td>
+								</tr>
 
-					<hr>
+								<tr>
+									<th scope = "row">Date of Birth</th>
+									<td>19 August, 1999</td>
+								</tr>
 
-					<!-- Key Project segment -->
-					<div id = "keyProject">
-						<h4><u>Key Projects</u></h4>
-						<ul>
-							<li>
-								<b>A Catalogue Display Website :</b> The admin in this site had access to database and was able to upload all necessary data and images of product on website for user's to see.
-							</li>
-							<li>
-								<b>SLAM BOOK :</b> User's in this site were allowed to see response of their friends on pre-defined questions in website.
-							</li>
-						</ul>
-					</div>
-
-					<hr>
-
-					<!-- Technical Knowledge -->
-					<div id = "technicalKnowledge">
-						<h4><u>Technical Knowledge</u></h4>
-						<table class="table table-bordered table-sm">
-							<tr>
-								<th scope = "row" rowspan="9">Programming Languages</th>
-								<td>C</td>
-							</tr>
-							<tr>
-								<td>C++</td>
-							</tr>
-							<tr>
-								<td>Java</td>
-							</tr>
-							<tr>
-								<td>Python</td>
-							</tr>
-							<tr>
-								<td>Php</td>
-							</tr>
-							<tr>
-								<td>Javascript</td>
-							</tr>
-							<tr>
-								<td>HTML</td>
-							</tr>
-							<tr>
-								<td>CSS</td>
-							</tr>
-							<tr>
-								<td>R</td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Frameworks</th>
-								<td>Bootstrap</td>
-							</tr>
-
-							<tr>
-								<th scope = "row" rowspan="2">Databases</th>
-								<td>Oracle</td>
-							</tr>
-							<tr>
-								<td>MySql</td>
-							</tr>
-
-							<tr>
-								<th scope = "row" rowspan="4">Tools</th>
-								<td>MS Word</td>
-							</tr>
-							<tr>
-								<td>MS Excel</td>
-							</tr>
-							<tr>
-								<td>MS Power Point</td>
-							</tr>
-							<tr>
-								<td>Sublime Text Editor</td>
-							</tr>
-
-							<tr>
-								<th scope = "row" rowspan="2">Operating System</th>
-								<td>Windows</td>
-							</tr>
-							<tr>
-								<td>Linux</td>
-							</tr>
-
-						</table>
-					</div>
-
-					<hr>
-
-					<!-- Other Information -->
-					<div id = "otherInfo">
-
-						<h4><u>Other Information</u></h4>
-						<table class="table table-striped">
-							<tr>
-								<th scope = "row">Linked In Profile</th>
-								<td><a href="https://www.linkedin.com/in/ritik-v-100516a5/">Click Here</a></td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Git Hub Profile</th>
-								<td><a href="https://github.com/Ritik1908">Click Here</a></td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Portfolio Link</th>
-								<td><a href="https://ritik1908.github.io/">Click Here</a></td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Skills</th>
-								<td>Smart Worker, Time Management, Problem Solving.</td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Hobbies</th>
-								<td>Guitar, Chess, Cricket.</td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Languages</th>
-								<td>English, Hindi, French.</td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Date of Birth</th>
-								<td>19 August, 1999</td>
-							</tr>
-
-							<tr>
-								<th scope = "row">Address</th>
-								<td>IG – 6/2, Aswininagar, Baguiati, Ganapati Vihar, Block – 2, Flat No. - 105, Kolkata - 700159, West Bengal.</td>
-							</tr>
-						</table>
-					</div>
+								<tr>
+									<th scope = "row">Address</th>
+									<td>IG – 6/2, Aswininagar, Baguiati, Ganapati Vihar, Block – 2, Flat No. - 105, Kolkata - 700159, West Bengal.</td>
+								</tr>
+							</table>
+						</div>
+	  				</div>
   				</div>
   			</div>
 
   			<div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
-  				Projects To Be Updated..
+  				
+  				<div id = "projectClassification" class = "container" style="display: block;">
+  					<div class = "row row-margin-top">
+  						<div class = "col-lg-6 col-md-6 col-sm-12">
+  							<button onclick="pythonProjects()"><img src="Images/python-logo.jpg" class = "img-fluid img-thumbnail"></button>
+  						</div>
+  						<div class = "col-lg-6 col-md-6 col-sm-12">
+  							<button onclick="webProjects()"><img src="Images/web-logo.jpg" class = "img-fluid img-thumbnail"></button>
+  						</div>
+  					</div>
+  				</div>
+
+  				<div id = "projectNav">
+  					
+  				</div>
+  				<div id = "pythonProjectDiv" style="display: none;">
+  					<div class = "container">
+  						<div class = " row row-margin-top">
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  								<h4><center>Image Resize</center></h4>
+  								<p>
+  									In web development we know that if we specify width and height of image in advance, loading time page increases significantly.
+  									<br>
+  									<br>
+									With the help of this python script we transform all the images to a given width and height.
+								</p>
+								<a href="https://github.com/Ritik1908/ImageResize">GitHub Link</a>
+  							</div>
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  								<h4><center>Mobile-Verify</center></h4>
+  								<p>To Be Updated Later.</p>
+  								<a href="https://github.com/Ritik1908/Mobile-Verify">GitHub Link</a>
+  							</div>
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  								<h4><center>Scrapping</center></h4>
+  								<p>To Be Updated Later.</p>
+  								<a href="https://github.com/Ritik1908/Scrapping">GitHub Link</a>
+  							</div>
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div id = "webProjectDiv" style="display: none;">
+  					<div class = "container">
+  						<div class = " row row-margin-top">
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  								<h4><center>Quiz</center></h4>
+  								<p>
+  									An simple web application created with the help of html and css and solely based on java script. It allows user to play quiz in selected topic.
+  									<br>
+  									<br>
+  									Sections Not Upadtes yet :- Business Studies Chemistry Economics Commerce Geography History Political Science Sociology.
+  								</p>
+  								<a href="https://ritik1908.github.io/Quiz/">Project Link</a>
+  								<br>
+  								<a href="https://github.com/Ritik1908/Quiz">GitHub Link</a>
+  							</div>
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  								<h4><center>Slam Book</center></h4>
+  								<p>
+  									Fully working Slam Book Web app created in 2018.
+  									<br>
+  									<br>
+  									In which users can create their account and share link to other users to fill up the questions(Slams) And later user can view all the responses in dashboard.
+  								</p>
+  								<a href="https://slam-book-2018.000webhostapp.com/">Project Link</a>
+  								<br>
+  								<a href="https://github.com/Ritik1908/SLAM-BOOK-2018">GitHub Link</a>
+  							</div>
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  								<h4><center>Tic-Tac-Toe</center></h4>
+  								<p>Tic-Tac-Toe Game to be played between two users in offline mode.</p>
+  								<a href="https://ritik1908.github.io/Tic-Tac-Toe/">Project Link</a>
+  								<br>
+  								<a href="https://github.com/Ritik1908/Tic-Tac-Toe">GitHub Link</a>
+  							</div>
+  							<div class = "col-lg-3 col-md-6 col-sm-12">
+  							</div>
+  						</div>
+  					</div>
+  				</div>
   			</div>
 
 
@@ -312,25 +395,25 @@
   				<div class = "container">  						  					
   					<center>
 	  					<div class = "row row-margin-top">
-	  						<div class="col-3">
+	  						<div class="col-lg-3 col-md-6 col-sm-12">
 								<a href="https://www.linkedin.com/in/ritik-v-100516a5/"><i class="fab fa-linkedin fa-6x"></i></a>
 			  				</div>
-			  				<div class="col-3">
+			  				<div class="col-lg-3 col-md-6 col-sm-12">
 			  					<a href="https://github.com/Ritik1908"><i class="fab fa-github fa-6x"></i></a>
 			  				</div>
-			  				<div class="col-3">			  						
+			  				<div class="col-lg-3 col-md-6 col-sm-12">			  						
 			  					<a href="mailto: ritikverma8100775754@gmail.com"><i class="fas fa-envelope-open-text fa-6x"></i></a>
 		  					</div>
-		  					<div class="col-3">
+		  					<div class="col-lg-3 col-md-6 col-sm-12">
 		 						<a href="tel: 8961713483"><i class="fas fa-phone-volume fa-6x"></i></a>
 			 				</div>
 			  			</div>
 
 			  			<div class = "row row-margin-top">
-			  				<div class = "col-3">
+			  				<div class = "col-lg-3 col-md-6 col-sm-12">
 			  					<a href="https://www.facebook.com/ritikverma1908"><i class="fab fa-facebook fa-6x"></i></a>
 			  				</div>
-			  				<div class = "col-3">
+			  				<div class = "col-lg-3 col-md-6 col-sm-12">
 			  					<a href="https://www.instagram.com/ritikverma9/"><i class="fab fa-instagram fa-6x"></i></a>
 			  				</div>
 			  			</div>
@@ -338,6 +421,32 @@
   				</div>
 			</div>
 
+		<script type="text/javascript">
+
+			var tab = document.getElementById("project-tab");
+			tab.onclick = classify;
+			var python = document.getElementById("pythonProjectDiv");
+			var web = document.getElementById("webProjectDiv");
+			var classification = document.getElementById("projectClassification");
+		
+			function pythonProjects() {
+				python.style.display = "block";
+				web.style.display = "none";
+				classification.style.display = "none";
+			}
+
+			function webProjects() {
+				python.style.display = "none";
+				web.style.display = "block";
+				classification.style.display = "none";
+			}
+
+			function classify() {
+				python.style.display = "none";
+				web.style.display = "none";
+				classification.style.display = "block";
+			}
+		</script>
   		<!-- JQuery links for bootstrap -->
     	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
