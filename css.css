@@ -9,3 +9,9 @@
 .img-padding {
 	margin: 2%;
 }
+
+.img-grid {
+    width: 400px; /* You can set the dimensions to whatever you want */
+    height: 300px;
+    object-fit: cover;
+}
