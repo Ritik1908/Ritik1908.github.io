@@ -1,120 +1,198 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Ritik Verma</title>
+<html lang="en">
 
-		<!-- Adding Image in Title Bar -->
-        <link rel = "icon" href = "Images/profilePhoto.jpeg" type = "image/x-icon">
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Ritik Verma</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<!-- Stylesheet link for bootstrap -->
-    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/profilePhoto.jpeg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-    	<!-- FontAwesome Kit -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<!-- FontAwesome Kit -->
     	<script src="https://kit.fontawesome.com/c3bf57b584.js" crossorigin="anonymous"></script>
 
-    	<!-- Internal StyleSheet for elements -->
-    	<link rel="stylesheet" type="text/css" href="css.css">
-  	</head>
-  	
-  	<body>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  		<!-- Navigation Bar -->
-  		<nav class="navbar navbar-expand-lg">
-		  	<ul class="nav nav-tabs" id="myTab" role="tablist">
-		  		<li class="nav-item">
-					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-	  			</li>
-		  		<li class="nav-item">
-		    		<a class="nav-link" id="my-resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">My Resume</a>
-		  		</li>
-		  		<li class="nav-item">
-		    		<a class="nav-link" id="project-tab" data-toggle="tab" href="#project" role="tab" aria-controls="project" aria-selected="false">Projects</a>
-		  		</li>
-		  		<li class="nav-item">
-		    		<a class="nav-link" id="blog-tab" data-toggle="tab" href="#blog" role="tab" aria-controls="blog" aria-selected="false">Blogs</a>
-		  		</li>
-		  		<li class="nav-item">
-		    		<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Details</a>
-		  		</li>
-			</ul>
-		</nav>
+</head>
+<body id="page-top" class="politics_version">
 
-		<div class="tab-content" id="myTabContent">
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<p style="color: black;">Ritik Verma</p>
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+            </li>
 
-			<!-- About Us Page -->
-  			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+            </li>
 
-  				<div class = "container">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact Details</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<div id="home" class="ct-header ct-header--slider ct-slick-custom-dots">
+		<div class="ct-slick-homepage" data-arrows="true" data-autoplay="false">
 
-  					<!-- Header Details and Job Title -->
-	  				<center class = "row-margin-top">
-	  					<dl>
-	  						<dt>Ritik Verma</dt>
-	  						<dd>Full Stack Web Developer</dd>
-	  					</dl>
-	  				</center>
+			<div class="ct-header tablex item" data-background="uploads/background.jpg">
+				<div class="ct-u-display-tablex">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-lg-8 slider-inner">
+									<h1 class="big animated">Hello I'm Web Developer and Data Scientist in making</h1>
+									<!-- <p class="animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis massa bibendum sodales rhoncus.</p> -->
+									<a class="btn-new from-middle animated" href="resume.pdf">Download cv</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	  				<hr>
+			<!-- <div class="ct-header tablex item" data-background="uploads/banner-01.jpg">
+				<div class="ct-u-display-tablex">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-lg-8 slider-inner">
+									<h1 class="big animated">Hello I'm Ux/Ui Designer</h1>
+									<p class="animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis massa bibendum sodales rhoncus.</p>
+									<a class="btn-new from-middle animated" href="#">Download cv</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
 
-	  				<img src="Images/quote.jpg" class = "img-fluid img-thumbnail img-grid">
+			<!-- <div class="ct-header tablex item" data-background="uploads/banner-01.jpg">
+				<div class="ct-u-display-tablex">
+					<div class="inner">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 col-lg-8 slider-inner">
+									<h1 class="big animated">Hello I'm Web Developer</h1>
+									<p class="animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis massa bibendum sodales rhoncus.</p>
+									<a class="btn-new from-middle animated" href="#">Download cv</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			
+		</div><!-- .ct-slick-homepage -->
+	</div><!-- .ct-header --> 
 
-	  				<hr>
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2>About Me</h2>
 
-	  				<div class = "row">
-	  					<div class = "col-lg-4 col-sm-12">
-	  						<img src="Images/profilePhoto.jpeg" class = "img-fluid img-thumbnail img-grid">
-	  					</div>
-	  					<div class = "col-lg-8 col-sm-12">
-	  						<h3 align="center">About Me</h3>
-	  						<p>
-	  							I am a competitive coder with knowledge of programming languages like Python, C, Java, etc. I have clear concepts in topics like Data Structures and Algorithms, Database Management Systems (DBMS), Software Engineering (Principals).
-	  							<br>
-	  							Development and practical implementation of concepts are what makes me eager to learn more. I have experience in Web Development (both back-end and front-end). Along with Web Development, I am learning Data Science and Machine Learning, the hottest technology in the industry. Apart from being the trendiest topic to have hands-on, the never-ending application of this technology is what drives me crazy.
-	  						</p>
+                        <p>
+                        	I am a competitive coder with knowledge of programming languages like Python, C, Java, etc. I have clear concepts in topics like Data Structures and Algorithms, Database Management Systems (DBMS), Software Engineering (Principals).
+	  						<br>
+	  						<br>
+	  						Development and practical implementation of concepts are what makes me eager to learn more. I have experience in Web Development (both back-end and front-end). Along with Web Development, I am learning Data Science and Machine Learning, the hottest technology in the industry. Apart from being the trendiest topic to have hands-on, the never-ending application of this technology is what drives me crazy.
+	  					</p>
 
-	  						<p>My Strenghts:</p>
-							<ul>
-								<li>Smart Worker</li>
-								<li>Perfectionist</li>
-								<li>Calm Nature</li>
-								<li>Quick Learning Ability</li>
-							</ul>
+	  					<p>My Strenghts: Smart Worker, Perfectionist, Calm Nature, Quick Learning Ability</p>
 
-							<p>Core Competencies:</p>
-							<ul>
-								<li>Leadership (Decision Making) and Management Skills</li>
-								<li>Problem Solver</li>
-								<li>Team Worker</li>
-								<li>Adaptability</li>
-								<li>Effective Communication Skills.</li>
-							</ul>
+						<p>Core Competencies: Leadership (Decision Making) and Management Skills, Problem Solver, Team Worker, Adaptability, Effective Communication Skills</p>
 
-	  					</div>
-  					</div>
+						<!-- <ul>
+							<li><b>Follow Me</b></li>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+						</ul> -->
 
-  					<hr>
+						<a class="btn-new from-middle animated" href="resume.pdf">Download cv</a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
 
-  				</div>
-  			</div>
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+						<img src="images/profilePhoto.png" alt="" class="img-fluid img-rounded fat-ab">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
-  			<!-- Resume Page -->
-  			<div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="my-resume-tab">
+    <div id = "resume" class="section lb">
+    	<div class="container">
+    		<div class="section-title text-center">
+		    	<h3>Resume</h3>
+		    	<p>A brief account of a person's education, qualifications, and previous occupations, typically sent with a job application.</p>
+		    </div>
+	    </div>
 
-  				<div class = "container">
-  					<!-- Resume Button Download -->
-	  				<div id = "resumeDownload" class = "row-margin-top">
-	  					<center>
-	  						<h4>Resume Download</h4>
-	  						<p>Click on the button below to download the resume</p>
-	  						<a href="resume.pdf" download="Ritik Verma Resume" class="btn btn-primary btn-lg btn-block">
-	  							Download
-	  						</a>
-	  					</center>
-	  				</div>
-
-	  				<hr>
-
-	  				<!-- Resume Block -->
+	    <div class="container">
+	    	<!-- Resume Block -->
 	  				<div style="border: 1px solid black; padding: 10px; margin:0px 100px">
 
 	  					<!-- Basic Info -->
@@ -325,200 +403,202 @@
 							</table>
 						</div>
 	  				</div>
-  				</div>
-  			</div>
+	    </div>
+    </div>
+	
+	<div id="projects" class="section lb">
+		<div class="container">
+			<div class="section-title text-center">
+                <h3>Projects</h3>
+                <p>Let our advance worrying become advance thinking and planning.</p>
+            </div><!-- end title -->
+			
+			<div class="gallery-menu text-center row">
+				<div class="col-md-12">
+					<div class="button-group filter-button-group">
+						<button class="btn-new from-middle animated active" data-filter="*">All</button>
+						<button class="btn-new from-middle animated" data-filter=".gal_web">Web Development</button>
+						<button class="btn-new from-middle animated" data-filter=".gal_py">Python Projects</button>
+						<!-- <button class="btn-new from-middle animated" data-filter=".gal_c">Graphic Design</button> -->
+					</div>
+				</div>
+			</div>
+			
+			<div class="gallery-list row">
+				<div class="col-md-6 gallery-grid gal_web">
+					<div class="gallery-single spi-hr fix hover">
+						<img src="images/quiz.jpg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Quiz:</h3>
+							<h4>An simple web application created with the help of html and css and solely based on java script. It allows user to play quiz in selected topic.</h4>
+							<h4><a href="https://ritik1908.github.io/Quiz/" style="color: blue;"><b>Project Link</b></a></h4>
+  							<h4><a href="https://github.com/Ritik1908/Quiz" style="color: blue;"><b>GitHub Link</b></a></h4>
+						</div>
+						<div class="img-overlay">
+						</div>
+					</div>
+				</div>
 
-  			<div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
-  				
-  				<div id = "projectClassification" class = "container" style="display: block;">
-  					<div class = "row row-margin-top">
-  						<div class = "col-lg-6 col-md-6 col-sm-12">
-  							<h4><center>Python Projects</center></h4>
-  							<button onclick="pythonProjects()"><img src="Images/python.jpeg" class = "img-fluid img-thumbnail img-grid"></button>
-  						</div>
-  						<div class = "col-lg-6 col-md-6 col-sm-12">
-  							<h4><center>Web Development Projects</center></h4>
-  							<button onclick="webProjects()"><img src="Images/webDevelopment.jpeg" class = "img-fluid img-thumbnail img-grid"></button>
-  						</div>
-  					</div>
-  				</div>
+				<div class="col-md-6 gallery-grid gal_web">
+					<div class="gallery-single spi-hr fix hover">
+						<img src="images/slamBook.jpeg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Slam Book:</h3>
+							<h4>A slam book app created in 2018, in which users can create their account and share link to other users to fill up the questions(Slams) And later user can view all the responses in dashboard.</h4>
+							<h4><a href="https://ritik1908.github.io/Tic-Tac-Toe/" style="color: blue;"><b>Project Link</b></a></h4>
+  							<h4><a href="https://github.com/Ritik1908/Tic-Tac-Toe" style="color: blue;"><b>GitHub Link</b></a></h4>
+						</div>
+						<div class="img-overlay">
+						</div>
+					</div>
+				</div>
 
-  				<div id = "projectNav">
-  					
-  				</div>
-  				<div id = "pythonProjectDiv" style="display: none;">
-  					<div class = "container">
-  						<div class = " row row-margin-top">
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  								<h4><center>Image Resize</center></h4>
-  								<img src="Images/imageResize.jpg" class = "img-fluid img-thumbnail img-grid">
-  								<p>
-  									In web development we know that if we specify width and height of image in advance, loading time page increases significantly.
-  									<br>
-  									<br>
-									With the help of this python script we transform all the images to a given width and height.
-								</p>
-								<a href="https://github.com/Ritik1908/ImageResize">GitHub Link</a>
-  							</div>
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  								<h4><center>Mobile-Verify</center></h4>
-  								<img src="Images/mobileVerify.jpeg" class = "img-fluid img-thumbnail img-grid">
-  								<p>To Be Updated Later.</p>
-  								<a href="https://github.com/Ritik1908/Mobile-Verify">GitHub Link</a>
-  							</div>
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  								<h4><center>Scrapping</center></h4>
-  								<img src="Images/webScrapping.jpg" class = "img-fluid img-thumbnail img-grid">
-  								<p>To Be Updated Later.</p>
-  								<a href="https://github.com/Ritik1908/Scrapping">GitHub Link</a>
-  							</div>
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  				<div id = "webProjectDiv" style="display: none;">
-  					<div class = "container">
-  						<div class = " row row-margin-top">
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  								<h4><center>Quiz</center></h4>
-  								<img src="Images/quiz.jpg" class = "img-fluid img-thumbnail img-grid">
-  								<p>
-  									An simple web application created with the help of html and css and solely based on java script. It allows user to play quiz in selected topic.
-  									<br>
-  									<br>
-  									Sections Not Upadtes yet :- Business Studies Chemistry Economics Commerce Geography History Political Science Sociology.
-  								</p>
-  								<a href="https://ritik1908.github.io/Quiz/">Project Link</a>
-  								<br>
-  								<a href="https://github.com/Ritik1908/Quiz">GitHub Link</a>
-  							</div>
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  								<h4><center>Slam Book</center></h4>
-  								<p>
-  									<img src="Images/slamBook.jpeg" class = "img-fluid img-thumbnail img-grid">
-  									Fully working Slam Book Web app created in 2018.
-  									<br>
-  									<br>
-  									In which users can create their account and share link to other users to fill up the questions(Slams) And later user can view all the responses in dashboard.
-  								</p>
-  								<a href="https://slam-book-2018.000webhostapp.com/">Project Link</a>
-  								<br>
-  								<a href="https://github.com/Ritik1908/SLAM-BOOK-2018">GitHub Link</a>
-  							</div>
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  								<h4><center>Tic-Tac-Toe</center></h4>
-  								<img src="Images/tictactoe.jpg" class = "img-fluid img-thumbnail img-grid">
-  								<p>Tic-Tac-Toe Game to be played between two users in offline mode.</p>
-  								<a href="https://ritik1908.github.io/Tic-Tac-Toe/">Project Link</a>
-  								<br>
-  								<a href="https://github.com/Ritik1908/Tic-Tac-Toe">GitHub Link</a>
-  							</div>
-  							<div class = "col-lg-3 col-md-6 col-sm-12">
-  							</div>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
+				<div class="col-md-6 gallery-grid gal_web">
+					<div class="gallery-single spi-hr fix hover">
+						<img src="images/tictactoe.jpg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Tic-Tac-Toe:</h3>
+							<h4>Tic-Tac-Toe Game to be played between two users in offline mode.</h4>
+							<h4><a href="https://ritik1908.github.io/Quiz/" style="color: blue;"><b>Project Link</b></a></h4>
+  							<h4><a href="https://github.com/Ritik1908/Quiz" style="color: blue;"><b>GitHub Link</b></a></h4>
+						</div>
+						<div class="img-overlay">
+						</div>
+					</div>
+				</div>
 
-  			<div class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab">
+				<div class="col-md-6 gallery-grid gal_py">
+					<div class="gallery-single spi-hr fix hover">
+						<img src="images/mobileVerify.jpeg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Mobile Verify:</h3>
+							<h4>A Python Script to check wheater a given mobile number is valir or not (only Indian Mobile Numbers).</h4>
+  							<h4><a href="https://github.com/Ritik1908/Mobile-Verify" style="color: blue;"><b>GitHub Link</b></a></h4>
+						</div>
+						<div class="img-overlay">
+						</div>
+					</div>
+				</div>
 
-  				<div id = "blogHeader">
-	  				<h1><center>Blogs</center></h1>
-	  				<p><center>"The first thing you need to decide when you build your blog is what you want to accomplish with it, and what it can do if successful."</center></p>
-	  			</div>
+				<div class="col-md-6 gallery-grid gal_py">
+					<div class="gallery-single spi-hr fix hover">
+						<img src="images/imageResize.jpg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Image Resize:</h3>
+							<h4>A python script to transform all the images to a given width and height.</h4>
+  							<h4><a href="https://github.com/Ritik1908/ImageResize" style="color: blue;"><b>GitHub Link</b></a></h4>
+						</div>
+						<div class="img-overlay">
+						</div>
+					</div>
+				</div>
 
-	  			<hr>
+				<div class="col-md-6 gallery-grid gal_py">
+					<div class="gallery-single spi-hr fix hover">
+						<img src="images/webScrapping.jpg" class="img-fluid" alt="Image">
+						<div class="text-hover">
+							<h3>Web Scrapping:</h3>
+							<h4>A python script to scrap movie data from IMDB top 200 movies list.</h4>
+  							<h4><a href="https://github.com/Ritik1908/Scrapping" style="color: blue;"><b>GitHub Link</b></a></h4>
+						</div>
+						<div class="img-overlay">
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div id="blog" class="section lb">
+		<div class="container">
+			<div class="section-title text-center">
+                <h3>Blogs</h3>
+                <p>The first thing you need to decide when you build your blog is what you want to accomplish with it, and what it can do if successful.</p>
+            </div><!-- end title -->
+			
+			<div class="row">
+				<div class="col-md-6">
+					<figure class="snip1401">
+						<img src="https://miro.medium.com/max/900/1*Q7uLcPnDNEwLqEDyC14Ecg.jpeg" alt="" class = "img-fluid img-thumbnail" />
+						<figcaption>
+							<h6>Fascinated by the word “Data”? Confused with numerous career field related to “Data”?</h6>
+							<h6 style="font-size: 12px;">The fact that Google alone on an average have more than 20 petabytes i.e 20971520 gigabytes 🤯 of data stored in its data centres shows...</h6>
+							<ul>
+                                <li style="font-size: 10px;">Published On</li>
+                                <li style="font-size: 10px;">Jan 25, 2019</li>
+                            </ul>
+						</figcaption>
+						<i class="ion-ios-home-outline"></i>
+						<a href="https://medium.com/@ritikverma_56660/fascinated-by-the-word-data-confused-with-numerous-career-field-related-to-data-8016cd24a6bc"></a>
+					</figure>
+				</div>
 
-	  			<div id = "myBlogs">
-	  				<div class="container">
-	  					<div class = "row">
-	  						<div class="col-lg-3 col-sm-12">
-		  						<img src="https://miro.medium.com/max/900/1*Q7uLcPnDNEwLqEDyC14Ecg.jpeg" class = "img-fluid img-thumbnail img-grid" style="height: 200px;">
-		  					</div>
-		  					<div class="col-lg-9 col-sm-12">
-		  						<h3>Fascinated by the word “Data”? Confused with numerous career field related to “Data”?</h3>
-		  						<p>The fact that Google alone on an average have more than 20 petabytes i.e 20971520 gigabytes 🤯 of data stored in its data centres shows <a href="https://medium.com/@ritikverma_56660/fascinated-by-the-word-data-confused-with-numerous-career-field-related-to-data-8016cd24a6bc">load more</a></p>
-		  						<p>Published on Jan 25</p>
-		  					</div>
-	  					</div>
+			</div>
+			
+		</div>
+	</div>
 
-	  					<hr>
-
-	  				</div>
-
-	  			</div>
-  			</div>
-
-  			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-
-  				<div class = "container">  						  					
+    <div id="contact" class="section db">
+        <div class = "container">  						  					
   					<center>
 	  					<div class = "row row-margin-top">
 	  						<div class="col-lg-3 col-md-6 col-sm-12">
-								<a href="https://www.linkedin.com/in/ritik-v-100516a5/"><i class="fab fa-linkedin fa-6x"></i></a>
+	  							<div class="jumbotron">
+									<a href="https://www.linkedin.com/in/ritik-v-100516a5/"><i class="fab fa-linkedin fa-6x" style="color: blue;"></i></a>
+								</div>
 			  				</div>
 			  				<div class="col-lg-3 col-md-6 col-sm-12">
-			  					<a href="https://github.com/Ritik1908"><i class="fab fa-github fa-6x"></i></a>
+			  					<a href="https://github.com/Ritik1908"><i class="fab fa-github fa-6x" style="color: blue;"></i></a>
 			  				</div>
 			  				<div class="col-lg-3 col-md-6 col-sm-12">			  						
-			  					<a href="mailto: ritikverma8100775754@gmail.com"><i class="fas fa-envelope-open-text fa-6x"></i></a>
+			  					<a href="mailto: ritikverma8100775754@gmail.com"><i class="fas fa-envelope-open-text fa-6x" style="color: blue;"></i></a>
 		  					</div>
 		  					<div class="col-lg-3 col-md-6 col-sm-12">
-		 						<a href="tel: 8961713483"><i class="fas fa-phone-volume fa-6x"></i></a>
+		 						<a href="tel: 8961713483"><i class="fas fa-phone-volume fa-6x" style="color: blue;"></i></a>
 			 				</div>
 			  			</div>
 
 			  			<div class = "row row-margin-top">
 			  				<div class = "col-lg-3 col-md-6 col-sm-12">
-			  					<a href="https://www.facebook.com/ritikverma1908"><i class="fab fa-facebook fa-6x"></i></a>
+			  					<a href="https://www.facebook.com/ritikverma1908"><i class="fab fa-facebook fa-6x" style="color: blue;"></i></a>
 			  				</div>
 			  				<div class = "col-lg-3 col-md-6 col-sm-12">
-			  					<a href="https://www.instagram.com/ritikverma9/"><i class="fab fa-instagram fa-6x"></i></a>
+			  					<a href="https://www.instagram.com/ritikverma9/"><i class="fab fa-instagram fa-6x" style="color: blue;"></i></a>
 			  				</div>
 			  			</div>
 			  		</center>
   				</div>
-			</div>
+    </div><!-- end section -->
 
-		<script type="text/javascript">
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Nickie</a> Design By : 
+					<a href="https://html.design/">html design</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
 
-			var tab = document.getElementById("project-tab");
-			tab.onclick = classify;
-			var python = document.getElementById("pythonProjectDiv");
-			var web = document.getElementById("webProjectDiv");
-			var classification = document.getElementById("projectClassification");
-		
-			function pythonProjects() {
-				python.style.display = "block";
-				web.style.display = "none";
-				classification.style.display = "none";
-			}
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-			function webProjects() {
-				python.style.display = "none";
-				web.style.display = "block";
-				classification.style.display = "none";
-			}
-
-			function classify() {
-				python.style.display = "none";
-				web.style.display = "none";
-				classification.style.display = "block";
-			}
-		</script>
-  		<!-- JQuery links for bootstrap -->
-    	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  </body>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/animated-slider.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
 </html>
-
-<!-- 
-git commit -m "About Page and Resume Page Uploaded"
-
-git add -A
-git commit -m “Initial Commit”
-git push origin master
--->
